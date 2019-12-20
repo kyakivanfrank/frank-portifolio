@@ -3,9 +3,9 @@ import './App.css';
 import NavCompo from "./components/header/NavCompo";
 import FooterComp from './components/footer/FooterComp';
 import IntroComp from './components/main/IntroComp';
-import MyCareerModules from './components/main/MyCareerModules';
 import Gallery from './components/main/Gallery';
 import Employers from './components/main/Employers';
+import Routas from './components/main/routers/Routas';
 
 import portifolioLogo from './img/kyakivanfrank handwriting.png';
 
@@ -24,7 +24,9 @@ render(){
     </header>
     <body >
     <section className="intro"><IntroComp/></section>
-    <section className="careerOptions"><MyCareerModules/></section>
+
+
+    <section className="careerOptions">  <Routas/>   </section>
    <section className="gallery"> <Gallery/></section>
     <section className="employers"><Employers/></section>
     </body>
