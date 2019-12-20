@@ -1,0 +1,96 @@
+.App {
+  /* text-align: center; */
+  color: #000415;
+
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+body{background-color:#a6e1fa;} 
+
+h1{font-size: 50px; margin:0}
+h2{font-size: 25px; margin:0}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+/* this is the header */
+header {
+  /* position: fixed; */
+  width: 100%;
+  background-color: #4a46ab;
+  min-height: 20vh;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  /* justify-content: center; */
+  /* font-size: calc(10px + 2vmin); */
+  /* color: white; */
+}
+
+header ul  { float: right; list-style: none; margin:2px 5px; }
+header ul li { float: right; list-style: none; margin:2px 5px; }
+a { text-decoration: none;  }
+
+#Logo{width: 220px;}
+
+
+/* this is the intro section */
+
+
+.intro{background-color: #4a46ab; height: 300px; }
+.introPage{display: flex;}
+
+#helloThere{font-size: 30px;}
+#intropic {width: 400px;
+   margin-top:-50px;
+  }
+#introspan{ border:40px #27246c solid; border-radius: 60% 60px 60px 60px ;  float:right; height: 400px; margin-top: -20px; }
+#hire-meBtn{ border: none; border-radius: 10px; background-color:  #c2e812; width: 200px; padding: 10px;  font-size: 20px; margin: 10px auto; }
+
+/* this is the career buttons section */
+.careerPics{width: 500px;}
+.careerOptions{ align-items: center; padding: 200px 0 50px;   }
+#btnCode{ color: #4a46ab; font-weight: bold; float: right; text-align: end; border-top-left-radius: 20px; border-bottom-left-radius: 20px; }
+#btnArt{  color: #27246c; text-align: start;   border-top-right-radius: 20px; border-bottom-right-radius: 20px;}
+
+
+
+#btnCode, #btnArt{ margin: 100px 0 0 0; border: none;  border-top: 30px #27246c solid; border-bottom: 50px #27246c solid; font-size: 100px; background: none ; padding: 20px 0 1px; 
+}
+.btnEnvelope{ display: flex; }
+
+#codeDiv, #artDiv{ align-items: center; 
+  height: 400px; background-size: contain; background-repeat: no-repeat; background-position: center;  width: 50%; }
+#codeDiv{ background-image: url('./img/codePic.png');}
+#artDiv{ background-image: url('./img/tigerPic.png');}
+.careerOptions h3{font-size: 25px; text-align: center;  }
+em{color: white;}
+
+/* this is the gallery */
+.gallery{background-color: #000415; padding: 20px 0; }
+.gallery h2, .employers h2{color: #a6e1fa; font-size: 40px; text-align: center; padding: 50px 0; } /* this is both for employers and gallery  */
+.eachImg{margin:5px 5px; width: 300px;  }
+
+/* this is emplyers */
+.employers{background-color: #f1f1f1;  }
+.employers h2{color: #000415;}
+.emploHolder{border: 3px red solid; margin: 0 auto; display: inline;}
+
+/* this is the footer */
+footer{background-color: #000415; padding-top: 30px;  }
+.footerbody{ background-color: #000000; width: fit-content; padding: 20px; color: #c2e812; float: right; }
+footer #Logo{width: 150px;}
+.footerBox{height:230px;}
+#email{ color: #4a46ab;}
+.declarSec{  margin-top:30px; border-top: 3px #4a46ab solid; background-color: #000000; color: #a6e1fa; text-align: center; font-size: 15px; padding: 30px 0;}
+
+
+
+/* #c2e812*/
+
