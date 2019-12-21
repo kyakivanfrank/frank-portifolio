@@ -19,6 +19,9 @@ h2{font-size: 25px; margin:0}
 }
 
 
+/* flexing Displays */
+header, .introPage, .btnEnvelope, .dev-descr-box, .templato, #contr{display: flex;}
+
 /* this is the header */
 header {
   /* position: fixed; */
@@ -44,7 +47,7 @@ a { text-decoration: none;  }
 
 
 .intro{background-color: #4a46ab; height: 300px; }
-.introPage{display: flex;}
+
 
 #helloThere{font-size: 30px;}
 #intropic {width: 400px;
@@ -58,29 +61,44 @@ a { text-decoration: none;  }
 .careerOptions{ align-items: center; padding: 200px 0 50px;   }
 #btnCode{ color: #4a46ab; font-weight: bold; float: right; text-align: end; border-top-left-radius: 20px; border-bottom-left-radius: 20px; }
 #btnArt{  color: #27246c; text-align: start;   border-top-right-radius: 20px; border-bottom-right-radius: 20px;}
-
-
-
-#btnCode, #btnArt{ margin: 100px 0 0 0; border: none;  border-top: 30px #27246c solid; border-bottom: 50px #27246c solid; font-size: 100px; background: none ; padding: 20px 0 1px; 
-}
-.btnEnvelope{ display: flex; }
-
-#codeDiv, #artDiv{ align-items: center; 
-  height: 400px; background-size: contain; background-repeat: no-repeat; background-position: center;  width: 50%; }
+#btnCode, #btnArt{ margin: 100px 0 0 0; border: none;  border-top: 30px #27246c solid; border-bottom: 50px #27246c solid; font-size: 100px; background: none ; padding: 20px 0 1px; }
+#codeDiv, #artDiv{ align-items: center; height: 400px; background-size: contain; background-repeat: no-repeat; background-position: center;  width: 50%; }
 #codeDiv{ background-image: url('./img/codePic.png');}
 #artDiv{ background-image: url('./img/tigerPic.png');}
 .careerOptions h3{font-size: 25px; text-align: center;  }
 em{color: white;}
 
+/* As a Webdevloper */
+.dev-descr-box h3{color: #27246c; text-align:  left; width: 70%;}
+.proWorks h1{color: #4a46ab; font-size: 40px;text-align: center; }
+.proWorks h1{margin: 50px 0; }
+
+/* project templates  */
+
+#tempHold{ border-top: 2px  #27246c solid; border-right: 2px  #27246c solid; margin: 20px 0;}
+.templato{ margin: 70px 0; border: 10px white solid; border-radius: 50px; border-top-right-radius: 30%; width: 60%; padding: 30px;}
+ .templatedescr{ width: 70%; padding: 0 20px; margin-top: -70px }
+ .templatedescr h1{ color: #27246c; background-color: #a6e1fa; margin: 0; width: fit-content; font-size: 40px; padding: 0 20px;  }
+ .templatedescr p{ color: #27246c; width: fit-content; font-size: 15px; }
+.imgHold{ width: 30%;}
+.templato img{width: 650px; border: 10px #a6e1fa solid;}
+
+/* .templatedescr{ border: 3px green solid; } */ 
+/* .templato .templatedescr{  } */
+
+
+
+
+
 /* this is the gallery */
 .gallery{background-color: #000415; padding: 20px 0; }
 .gallery h2, .employers h2{color: #a6e1fa; font-size: 40px; text-align: center; padding: 50px 0; } /* this is both for employers and gallery  */
-.eachImg{margin:5px 5px; width: 300px;  }
+.eachImg{margin: 5px 5px; width: 300px; }
 
 /* this is emplyers */
 .employers{background-color: #f1f1f1;  }
 .employers h2{color: #000415;}
-.emploHolder{border: 3px red solid; margin: 0 auto; display: inline;}
+.emploHolder{ margin: 0 auto; display: inline;}
 
 /* this is the footer */
 footer{background-color: #000415; padding-top: 30px;  }
@@ -92,5 +110,4 @@ footer #Logo{width: 150px;}
 
 
 
-/* #c2e812*/
 
