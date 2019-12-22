@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 
-body{background-color:#a6e1fa;} 
+body{background-color:#a6e1fa; } 
 
 h1{font-size: 50px; margin:0}
 h2{font-size: 25px; margin:0}
@@ -24,10 +24,10 @@ header, .introPage, .btnEnvelope, .dev-descr-box, .templato, #contr{display: fle
 
 /* this is the header */
 header {
-  /* position: fixed; */
+  position: fixed;
   width: 100%;
-  background-color: #4a46ab;
-  min-height: 20vh;
+  /* background-color: #4a46ab; */
+  min-height: 18vh;
   display: flex;
   /* flex-direction: column; */
   align-items: center;
@@ -36,16 +36,23 @@ header {
   /* color: white; */
 }
 
+header:hover{background: rgba(74, 70, 171, 0.99); 
+transition: 1s;
+}
+
+
 header ul  { float: right; list-style: none; margin:2px 5px; }
 header ul li { float: right; list-style: none; margin:2px 5px; }
 a { text-decoration: none;  }
 
-#Logo{width: 220px;}
+#Logo{width: 220px;
+   /* background-color: rgba(74, 70, 171, 0.5); padding: 15px 10% 10px 15px; 
+    border-radius: 30px 20px 60px 30px; */
+  }
 
 
 /* this is the intro section */
-
-
+.adjusta{height: 160px; width: 100%; background-color: #4a46ab;}
 .intro{background-color: #4a46ab; height: 300px; }
 
 
@@ -59,10 +66,16 @@ a { text-decoration: none;  }
 /* this is the career buttons section */
 .careerPics{width: 500px;}
 .careerOptions{ align-items: center; padding: 200px 0 50px;   }
+
+
 #btnCode{ color: #4a46ab; font-weight: bold; float: right; text-align: end; border-top-left-radius: 20px; border-bottom-left-radius: 20px; }
-#btnArt{  color: #27246c; text-align: start;   border-top-right-radius: 20px; border-bottom-right-radius: 20px;}
+#btnArt{ color: #27246c; text-align: start;  border-top-right-radius: 20px; border-bottom-right-radius: 20px;}
 #btnCode, #btnArt{ margin: 100px 0 0 0; border: none;  border-top: 30px #27246c solid; border-bottom: 50px #27246c solid; font-size: 100px; background: none ; padding: 20px 0 1px; }
-#codeDiv, #artDiv{ align-items: center; height: 400px; background-size: contain; background-repeat: no-repeat; background-position: center;  width: 50%; }
+
+#btnCode:hover, #btnArt:hover{color: #a6e1fa; background-color: #4a46ab;   transition: 1s;}
+#codeDiv, #artDiv{  align-items: center; height: 400px; background-size: contain; background-repeat: no-repeat; background-position: center;  width: 50%; }
+
+
 #codeDiv{ background-image: url('./img/codePic.png');}
 #artDiv{ background-image: url('./img/tigerPic.png');}
 .careerOptions h3{font-size: 25px; text-align: center;  }
@@ -93,7 +106,10 @@ em{color: white;}
 /* this is the gallery */
 .gallery{background-color: #000415; padding: 20px 0; }
 .gallery h2, .employers h2{color: #a6e1fa; font-size: 40px; text-align: center; padding: 50px 0; } /* this is both for employers and gallery  */
-.eachImg{margin: 5px 5px; width: 300px; }
+.imageContainer{  }
+/* .eachImagContainer{ display: flex; border: 3px red solid; width: 300px; } */
+.eachImg{margin: 0; width: 250px;  }
+
 
 /* this is emplyers */
 .employers{background-color: #f1f1f1;  }

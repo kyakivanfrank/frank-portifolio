@@ -18,18 +18,21 @@ render(){
     <div className="App">
     <header>
     <div className="container">
-    <a href="###"><img id="Logo" src={portifolioLogo} alt="portifolioLogo"/></a>
+    <a href="/"><img id="Logo" src={portifolioLogo} alt="portifolioLogo"/></a>
     <NavCompo/>
     </div>
     </header>
+
+
+
     <body >
+    <div className="adjusta"></div>
     <section className="intro"><IntroComp/></section>
-
-
     <section className="careerOptions">  <Routas/>   </section>
    <section className="gallery"> <Gallery/></section>
     <section className="employers"><Employers/></section>
     </body>
+
     <footer>
     <FooterComp/>
     </footer>

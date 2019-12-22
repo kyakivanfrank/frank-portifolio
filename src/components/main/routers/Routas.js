@@ -10,10 +10,8 @@ import MyCareerModules from '../MyCareerModules';
 
 export default Routas => <BrowserRouter>
 <Switch>
-
 <Route exact path="/" component={MyCareerModules}/>
 <Route exact path="/Webdevt" component={Webdevt}/>
 <Route exact path="/ArtProjects" component={ArtProjects}/>
-
 </Switch>
 </BrowserRouter>
