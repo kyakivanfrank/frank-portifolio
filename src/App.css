@@ -22,7 +22,7 @@ h2{font-size: 25px; margin:0}
 /* flexing Displays */
 header,
  .introPage,
-  .btnEnvelope, .dev-descr-box, .templato, #contr, .skillBox{display: flex;}
+  .btnEnvelope, .dev-descr-box, .templato,  .skillBox{display: flex;}
 
 /* this is the header */
 header {
@@ -89,7 +89,7 @@ a { text-decoration: none;  }
 #codeDiv:hover{ background-image: url('./img/bgPics/codePicBlurred.png');}
 #artDiv:hover{ background-image: url('./img/bgPics/tigerPicBlurred.png');}
 .careerOptions h3{font-size: 25px; text-align: center;  }
-#optLink{font-size: 18px; color: white}
+#optLink{font-size: 18px; color: white; float: right; margin: 20px 0 0}
 #optLink:hover{color: #000415; transition: 3s; }
 em{color: white;}
 
@@ -105,13 +105,17 @@ em{color: white;}
 /* project templates  */
 #tempHold{ border-top: 2px  #27246c solid; border-right: 2px  #27246c solid; margin: 20px 0;}
 .templato{ margin: 70px 0; border: 10px white solid; border-radius: 50px; border-top-right-radius: 30%; width: 60%; padding: 30px;}
- .templatedescr{ width: 70%; padding: 0 20px; margin-top: -70px }
+ .templatedescr{   width: 70%; padding: 0 20px; margin-top: -70px }
  .templatedescr h1{ color: #27246c; background-color: #a6e1fa; margin: 0; width: fit-content; font-size: 40px; padding: 0 20px;  }
- .templatedescr p{ color: #27246c; width: fit-content; font-size: 15px; }
-.imgHold{ width: 30%;}
+ .templatedescr p{ color: #27246c; width: fit-content; font-size: 15px;   }
+ #skillsUsed{  margin: 10px 0 }
+ #skillImg{width: 50px }
+
+.imgHold{ width: 30%; float: left;  }
 .templato img{width: 650px; border: 10px #a6e1fa solid;}
 
-#contr h3{margin: 0 10px;}
+ .templatedescr h3{ text-align: left; margin: 10px 0; font-size: 20px }
+
  #date{float: right; color: white; font-size: 18px}
 
 

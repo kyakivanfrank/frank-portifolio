@@ -22,9 +22,6 @@ render(){
     <NavCompo/>
     </div>
     </header>
-
-
-
     <body >
     <div className="adjusta"></div>
     <section className="intro"><IntroComp/></section>
@@ -32,7 +29,6 @@ render(){
    <section className="gallery"> <Gallery/></section>
     <section className="employers"><Employers/></section>
     </body>
-
     <footer>
     <FooterComp/>
     </footer>

@@ -7,6 +7,6 @@ import livewire from '../../img/companyLogos/livewire uganda.png';
 
 const companies =[premierDistilleries,cyberSchool,caddCentre,livewire];
 export default Employer =><div className="container">
-<h2>Companies that used my services</h2>
+<h2>Testimonial companies</h2>
 <div className="emploHolder">{ companies.map(company=><img id="company" src={company} alt={company}/>) }</div>
 </div>
