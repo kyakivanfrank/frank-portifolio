@@ -1,6 +1,8 @@
 import React from "react";
 import picto from '../../../img/galleryImages/myartFrank.JPEG';
 
+
+
 export default  ArtProjectTemplate => <div className="templato">
 <div className="templatedescr">
 <h1>The Bengal Tiger painting</h1>
