@@ -11,14 +11,14 @@ import wallFrank from '../../img/galleryImages/wallFrank.jpg';
 import mediFrank from '../../img/galleryImages/MediFrank.jpg';
 
 
-const myPics = [coolFrank ,mediFrank, wallFrank, chillingFrank, classFrank, friendsFrank, scarfaceFrank, glassesFrank];
+const myPics = [coolFrank ,mediFrank, wallFrank, chillingFrank, classFrank,mediFrank, friendsFrank, scarfaceFrank, glassesFrank];
 
 const randomwidths = Math.floor(Math.random()*100)
 export default Gallery=> {
     console.log(`${randomwidths}00`)
-    return <div className="container gallerysettings">
+    return <div className="container ">
     <h2>Gallery</h2>
-        <div className="imageContainer">{myPics.map( eachpic=> <img className="eachImg" src={eachpic} alt={eachpic}/> )}</div>
+        <div >{myPics.map( eachpic=> <img className="eachImg" src={eachpic} alt={eachpic}/> )}</div>
         </div>    
 }
 

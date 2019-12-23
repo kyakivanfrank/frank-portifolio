@@ -20,7 +20,7 @@ h2{font-size: 25px; margin:0}
 
 
 /* flexing Displays */
-header, .introPage, .btnEnvelope, .dev-descr-box, .templato, #contr{display: flex;}
+header, .introPage, .btnEnvelope, .dev-descr-box, .templato, #contr, .skillBox{display: flex;}
 
 /* this is the header */
 header {
@@ -36,14 +36,23 @@ header {
   /* color: white; */
 }
 
-header:hover{background: rgba(74, 70, 171, 0.99); 
-transition: 1s;
-}
+
+header a{font-size: 20px; color: #a6e1fa; }
+
+header:hover{background: rgba(74, 70, 171, 0.99); transition: 2s; }
 
 
-header ul  { float: right; list-style: none; margin:2px 5px; }
-header ul li { float: right; list-style: none; margin:2px 5px; }
+
+header ul  { float: right; list-style: none; margin: 2px 5px; }
+header ul li { float: right; list-style: none; margin:0px 20px; }
 a { text-decoration: none;  }
+.nav img{width: 50px; }
+.nav img:hover{ transition: 3s;
+ background-image: url('./img/githubLogoeyes.png');
+ background-size: 50px;
+ transition-delay: 5s;
+
+}
 
 #Logo{width: 220px;
    /* background-color: rgba(74, 70, 171, 0.5); padding: 15px 10% 10px 15px; 
@@ -68,26 +77,34 @@ a { text-decoration: none;  }
 .careerOptions{ align-items: center; padding: 200px 0 50px;   }
 
 
-#btnCode{ color: #4a46ab; font-weight: bold; float: right; text-align: end; border-top-left-radius: 20px; border-bottom-left-radius: 20px; }
-#btnArt{ color: #27246c; text-align: start;  border-top-right-radius: 20px; border-bottom-right-radius: 20px;}
-#btnCode, #btnArt{ margin: 100px 0 0 0; border: none;  border-top: 30px #27246c solid; border-bottom: 50px #27246c solid; font-size: 100px; background: none ; padding: 20px 0 1px; }
+#btnCode{ color: #4a46ab; font-weight: bold;  text-align: end; border-top-left-radius: 20px; border-bottom-left-radius: 20px; }
+#btnArt{ color: #27246c;  border-top-right-radius: 20px; border-bottom-right-radius: 20px; font-stretch: ultra-expanded; letter-spacing: 15px }
+#btnCode, #btnArt{ border: none; border-top: 30px #27246c solid; border-bottom: 50px #27246c solid;  font-size: 120px; background: none ; }
 
-#btnCode:hover, #btnArt:hover{color: #a6e1fa; background-color: #4a46ab;   transition: 1s;}
-#codeDiv, #artDiv{  align-items: center; height: 400px; background-size: contain; background-repeat: no-repeat; background-position: center;  width: 50%; }
-
-
-#codeDiv{ background-image: url('./img/codePic.png');}
-#artDiv{ background-image: url('./img/tigerPic.png');}
+	  .codebtnContainer, .artbtnContainer{ display: inline-block; margin-top: 100px; }
+	   .codebtnContainer{float: right;}
+#btnCode:hover, #btnArt:hover{color: #a6e1fa; padding:0 20px; background-color: #27246c; transition: 1s;}
+#codeDiv, #artDiv{ align-items: center; height: 400px; background-size: contain; background-repeat: no-repeat; background-position: center;  width: 50%; }
+#codeDiv:hover, #artDiv:hover{  transition: 2s;}
+#codeDiv{ background-image: url('./img/bgPics/codePic.png');}
+#artDiv{ background-image: url('./img/bgPics/tigerPic.png');}
+#codeDiv:hover{ background-image: url('./img/bgPics/codePicBlurred.png');}
+#artDiv:hover{ background-image: url('./img/bgPics/tigerPicBlurred.png');}
 .careerOptions h3{font-size: 25px; text-align: center;  }
+#optLink{font-size: 18px; color: white}
+#optLink:hover{color: #000415; transition: 3s; }
 em{color: white;}
 
 /* As a Webdevloper */
-.dev-descr-box h3{color: #27246c; text-align:  left; width: 70%;}
+.dev-descr-box h3{color: #27246c; text-align: left; width: 60%;}
 .proWorks h1{color: #4a46ab; font-size: 40px;text-align: center; }
 .proWorks h1{margin: 50px 0; }
 
-/* project templates  */
+.skillBox{  width: 35%; margin-left: 5%; background-color: #f1f1f1; border-radius: 20px; padding: 30px; }
+.skillBox h4{display: inline; text-align: center; border: 2px red solid;}
+.circleDiv{border: 2px #27246c solid; border-radius: 100%; width: 100px; height: 100px;}
 
+/* project templates  */
 #tempHold{ border-top: 2px  #27246c solid; border-right: 2px  #27246c solid; margin: 20px 0;}
 .templato{ margin: 70px 0; border: 10px white solid; border-radius: 50px; border-top-right-radius: 30%; width: 60%; padding: 30px;}
  .templatedescr{ width: 70%; padding: 0 20px; margin-top: -70px }
@@ -96,25 +113,23 @@ em{color: white;}
 .imgHold{ width: 30%;}
 .templato img{width: 650px; border: 10px #a6e1fa solid;}
 
-/* .templatedescr{ border: 3px green solid; } */ 
-/* .templato .templatedescr{  } */
-
-
+#contr h3{margin: 0 10px;}
+ #date{float: right; color: white; font-size: 18px}
 
 
 
 /* this is the gallery */
 .gallery{background-color: #000415; padding: 20px 0; }
 .gallery h2, .employers h2{color: #a6e1fa; font-size: 40px; text-align: center; padding: 50px 0; } /* this is both for employers and gallery  */
-.imageContainer{  }
-/* .eachImagContainer{ display: flex; border: 3px red solid; width: 300px; } */
 .eachImg{margin: 0; width: 250px;  }
+.eachImg:hover{ margin: 10; width: 400px; transition: 1s }
 
 
 /* this is emplyers */
 .employers{background-color: #f1f1f1;  }
 .employers h2{color: #000415;}
-.emploHolder{ margin: 0 auto; display: inline;}
+.emploHolder{ width: fit-content; margin: 0 auto; padding: 0px 0 50px;}
+#company{margin: 0 10px; width: 200px}
 
 /* this is the footer */
 footer{background-color: #000415; padding-top: 30px;  }
@@ -123,6 +138,8 @@ footer #Logo{width: 150px;}
 .footerBox{height:230px;}
 #email{ color: #4a46ab;}
 .declarSec{  margin-top:30px; border-top: 3px #4a46ab solid; background-color: #000000; color: #a6e1fa; text-align: center; font-size: 15px; padding: 30px 0;}
+
+.sMedia{width: 40px; margin:0px 5px;}
 
 
 
