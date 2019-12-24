@@ -9,7 +9,8 @@ export default IntroComp =><div className="container introPage">
 <div className="intContainer" >
 <h1><span id="helloThere">Hello there,</span> <br/> I'm Kyakusse frank Ivan</h1>
 <h2>Front-end <em>web developer</em>, Creative artist & Art Enthusiast</h2>
-   <button id="hire-meBtn">Hire me</button>
+
+<a  href="##"><div id="hire-meBtn">Hire me</div></a>
 </div>
 
 

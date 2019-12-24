@@ -1,20 +1,29 @@
 import React  from 'react';
-import portifolioLogo from '../../img/kyakivanfrank handwriting.png';
+// import portifolioLogo from '../../img/kyakivanfrank handwriting.png';
+import socialMedia from '../../img/socialMedia.png';
 
 
 export default FooterComp=> <div>
 
 <div className="container footerBox">
 
+<div className="footerbody0">
+
 <div>
-<a href="###"><img className="sMedia" alt="facebook"/></a>
-<a href="###"><img className="sMedia" alt="linkedIn"/></a>
-<a href="###"><img className="sMedia" alt="Instagram"/></a>
-<a href="###"><img className="sMedia" alt="twitter"/></a>
+<a href="###"><div id="fb" src={socialMedia} className="sMedia"></div>   </a>
+<a href="###"><div id="linkedIn" src={socialMedia} className="sMedia">  </div>    </a>
+<a href="###"><div id="insta" src={socialMedia} className="sMedia">  </div>   </a>
+<a href="###"><div id="twi" src={socialMedia} className="sMedia">   </div>   </a>
+
+
+
 </div>
 
+</div>
 
-<img id="Logo" src={portifolioLogo} alt="portifolioLogo"/>
+ {
+// <img id="Logo" src={portifolioLogo} alt="portifolioLogo"/>
+}
 
 <div className="footerbody">
 <h2>Kawempe Kampala, Uganda</h2>
