@@ -12,8 +12,44 @@ import projectImage from '../../../img/projectFiles/ArtProjectsImages/portraitFr
 
 import {Link} from 'react-router-dom';
 
-const Projectsdone =[ 'gladstepApp', 'KukyotoWebApp', 'myportifolio' ];
+
+const ArtProjectsdone =[ {
+
+    projectTitle:"KyakusseKyakusse in kasubi",
+    projectDescr:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
+    projectcreationDate:"23/1/1885",
+    projectContributor:"mzee, kjhbkfd, ddd",
+    projectLink:"https://kyuka",
+    projecttechUsed: [ gitLo,gitLo,gitLo,gitLo],
+    projectImage:projectImage
+
+},
+ {
+    projectTitle:"Kyakusse in kasubi",
+    projectDescr:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
+    projectcreationDate:"23/1/1885",
+    projectContributor:"mzee, kjhbkfd, ddd",
+    projectLink:"https://kyuka",
+    projecttechUsed: [ gitLo,gitLo,gitLo,gitLo],
+    projectImage:projectImage
+
+}, 
+{
+    projectTitle:"Kyakusse frank at Amritsar",
+    projectDescr:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
+    projectcreationDate:"23/1/1885",
+    projectContributor:"mzee, kjhbkfd, ddd",
+    projectLink:"https://kyuka",
+    projecttechUsed: [ gitLo,gitLo,gitLo,gitLo],
+    projectImage:projectImage
+
+} ];
+
+
+
+
 export default  ArtProjects => <div className="container">
+
 
 <h1>As an Artist,</h1>
 <div className="dev-descr-box">
@@ -36,10 +72,11 @@ Unexpectedly, This even gave me an artistic perception of Music and Dance(Hobbie
 
 
 <div >
-{ Projectsdone.map( project => 
+{ ArtProjectsdone.map( project => 
     <div id="tempHold">
     <ArtProjectTemplate
-    projectTitle="Kyakusse frank at Amritsar" projectDescr="
+    projectTitle={ArtProjectsdone[0].projectTitle} 
+    projectDescr="
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

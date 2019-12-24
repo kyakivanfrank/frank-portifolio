@@ -13,9 +13,9 @@ import mediFrank from '../../img/galleryImages/MediFrank.jpg';
 
 const myPics = [coolFrank ,mediFrank, wallFrank, chillingFrank, classFrank,mediFrank, friendsFrank, scarfaceFrank, glassesFrank];
 
-const randomwidths = Math.floor(Math.random()*100)
+// const randomwidths = Math.floor(Math.random()*100)
 export default Gallery=> {
-    console.log(`${randomwidths}00`)
+    // console.log(`${randomwidths}00`)
     return <div className="container ">
     <h2>Gallery</h2>
         <div >{myPics.map( eachpic=> <img className="eachImg" src={eachpic} alt={eachpic}/> )}</div>
