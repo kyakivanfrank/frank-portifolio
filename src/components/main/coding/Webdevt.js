@@ -43,4 +43,7 @@ after My Degree i decided to pursue <em>web and Mobile applications development<
 </div>
 
 
-</div></div>
+</div>
+<h3>Thanks for looking through my works! Aiming to advance more ... </h3>
+
+</div>
