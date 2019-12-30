@@ -11,7 +11,7 @@ export default  Webdevt => <div className="container">
 
 <h3>
 
-Right from my high school, I was fascinated by the use of computers, the working of software and the internet. Going to college I chose to enroll in a bachelor's degree in computer applications which gave me quite a broader view of what I saw aim for.
+Right from my high school, I was fascinated by the use of computers, the working of software and the internet. Going to college I chose to enroll in a bachelor's degree in computer applications which gave me quite a broader view of what I aimed for.
  So I specialized in <em>Web Development and mobile applications.</em> through the process, I haven't hesitate to get my hands dirty.
 
 
