@@ -25,7 +25,7 @@ render(){
     <body >
     <div className="adjusta"></div>
     <section className="intro"><IntroComp/></section>
-    <section className="careerOptions">  <Routas/>   </section>
+    <section className="careerOptions"> <Routas/> </section>
    <section className="gallery"> <Gallery/></section>
     <section className="employers"><Employers/></section>
     </body>

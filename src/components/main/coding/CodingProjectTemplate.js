@@ -7,13 +7,13 @@ const CodingProjectTemplate = ({ projectTitle, projectDescr, projectcreationDate
 <div className="templatedescr">
 <h1>{projectTitle}</h1>
 <p>{projectDescr}</p>
-<h3>contributors: {projectContributor}</h3>
+<h3>contributors: <em>{projectContributor}</em> </h3>
 
-<a href="###"><h3>{projectLink}</h3></a>
+<a href={projectLink} target="_blank" ><h3>{projectLink}</h3></a>
 
 
-
-<div id="skillsUsed">{projecttechUsed.map( skill => <img id="skillImg" src={skill} alt="this is a skill"/>) }</div>
+<h4 id="toolsHeading">Tools devised</h4>
+<div id="skillsUsed">{projecttechUsed.map( skill => <img id="skillImg" src={skill} alt={skill}/>) }</div>
 
 <h4 id="date">{projectcreationDate}</h4>
 </div>
