@@ -24,7 +24,7 @@ export default  ArtProjects => <div className="container">
 
 <h3>Being born to a Father who was a <em>fine artist</em>. I quickly grasped the ease of how to come up with artistic "somethings" at a tender age.
 <br/> Started with drawing very simple sketches to coming up with Large Complex Artistic projects ranging from paintings, Digitally designed Art( Graphics Design ) to many other arts <br/> 
-Unexpectedly, This even gave me an artistic perception of Music and Dance(Hobbies)
+Unexpectedly, This even gave me an artistic perception of Music and Dance (Hobbies)
 <br/>
 <Link id="optLink" to="/Webdevt"> Feel free to check out my Coding skills too!</Link>
 

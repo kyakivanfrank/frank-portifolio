@@ -2,7 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default MyCareerModules=> <div className="">
-    <h3 className="container">I use <em>Creativity</em> & <em>Programming</em> to come up with simple but user-friend Interfaces that give a satisfying visual user-experience</h3> 
+    <h3 className="container">
+    I Fuse <em>Art</em> and <em>Programming</em> to creatively produce user-satisfactory works that give a great eye-catching experience. <br/>Below are two major portions of my career intermixture
+    
+    
+    </h3> 
 
 <div className="btnEnvelope">
 <div id="codeDiv"> <div className="codebtnContainer"><Link id="btnCode" to="/webdevt" >Code</Link></div> </div>
