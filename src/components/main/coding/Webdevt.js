@@ -3,6 +3,9 @@ import React from 'react';
 import CodingProjectTemplate from  './CodingProjectTemplate';
 import { Link } from 'react-router-dom';
 import Dataset from  "../../Dataset";
+import reactLogo from "../../../img/projectFiles/toolsIcons/react.png"
+
+const Stackskills =["one", "two", 'threee', "one", "two", 'threee' ];
 
 export default  Webdevt => <div className="container">
 
@@ -12,7 +15,7 @@ export default  Webdevt => <div className="container">
 <h3>
 
 Right from my high school, I was fascinated by the use of computers, the working of software and the internet. Going to college I chose to enroll in a bachelor's degree in computer applications which gave me quite a broader view of what I aimed for.
- So I specialized in <em>Web Development and mobile applications.</em> through the process, I haven't hesitate to get my hands dirty.
+ So I specialized in <em>Web Development and mobile applications.</em> through the process, I haven't hesitated to get my hands dirty.
 
 
 
@@ -20,9 +23,10 @@ Right from my high school, I was fascinated by the use of computers, the working
 <Link id="optLink" to="/ArtProjects">Feel free to check out my artistic skills too!</Link>
 </h3>
 
-<div className="skillBox">{
-    // Stackskills.map(eachskill => <span>  <div className="circleDiv"><img alt="skillLogo"/></div>  <h4>{eachskill}</h4> </span>)
-}</div>
+<div className="skillBox">
+<div className="SkillContainer">
+{Stackskills.map(eachskill =>  <div className="circleDiv"> <img id="skillLogo" src={reactLogo} alt="skillLogo"/> </div>)}</div>
+</div>
 </div>
 
 <div className="proWorks">

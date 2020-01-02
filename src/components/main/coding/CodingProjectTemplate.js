@@ -9,11 +9,12 @@ const CodingProjectTemplate = ({ projectTitle, projectDescr, projectcreationDate
 <p>{projectDescr}</p>
 <h3>contributors: <em>{projectContributor}</em> </h3>
 
-<a href={projectLink} target="_blank" ><h3>{projectLink}</h3></a>
-
 
 <h4 id="toolsHeading">Tools devised</h4>
 <div id="skillsUsed">{projecttechUsed.map( skill => <img id="skillImg" src={skill} alt={skill}/>) }</div>
+
+<a href={projectLink} target="_blank" rel="noopener noreferrer" ><h3>{projectLink}</h3></a>
+
 
 <h4 id="date">{projectcreationDate}</h4>
 </div>

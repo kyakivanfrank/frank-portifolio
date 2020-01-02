@@ -1,3 +1,12 @@
+*{
+	box-sizing: border-box;
+}
+
+a { text-decoration: none;  }
+a:hover { color: #000415 }
+
+
+
 .App { color: #000415; }
 .container{ width: 80%; margin: 0 auto; }
 body{background-color:#a6e1fa; } 
@@ -29,10 +38,9 @@ header {
 }
 
 header a{font-size: 20px; color: #a6e1fa; z-index: 4}
-header:hover{background: rgba(74, 70, 171, 0.8); transition: 1s; }
+header:hover{background: rgba(74, 70, 171, 0.95); transition: 1s; }
 header ul  { float: right; list-style: none; margin: 2px 5px; }
 header ul li { float: right; list-style: none; margin:0px 20px; }
-a { text-decoration: none;  }
 .nav img{width: 50px; }
 .nav img:hover{ transition: 3s; background-image: url('./img/githubLogoeyes.png'); background-size: 50px; transition-delay: 5s;}
 
@@ -44,7 +52,7 @@ a { text-decoration: none;  }
 
 /* this is the intro section */
 .adjusta{height: 160px; width: 100%; background-color: #4a46ab;}
-.intro{background-color: #4a46ab; height: 300px; }
+.intro{background-color: #4a46ab; height: 310px; }
 .intContainer{ width: 60%; z-index: 2; }
 /*.intContainer #hiremeBTN{ width: 100px }*/
 .intContainer2{ width: 40%; z-index: 1;}
@@ -58,7 +66,6 @@ a { text-decoration: none;  }
 
 .gettingHired{width: 50%; height: 400px;padding: 40px; background-color: #f1f1f1; margin: 50px auto;}
 .hireBox{position: fixed; z-index: 5;}
-
 
 
 /* this is the career buttons section */
@@ -84,12 +91,14 @@ em{color: white;}
 
 /* As a Webdevloper */
 .dev-descr-box h3{color: #27246c; text-align: left; width: 60%;}
-.proWorks h1{color: #4a46ab; font-size: 40px;text-align: center; }
+.proWorks h1{color: #4a46ab; font-size: 40px; text-align: center; }
 .proWorks h1{margin: 50px 0; }
 
-.skillBox{  width: 35%; margin-left: 5%; background-color: #f1f1f1; border-radius: 20px; padding: 30px; }
-.skillBox h4{display: inline; text-align: center; border: 2px red solid;}
-.circleDiv{border: 2px #27246c solid; border-radius: 100%; width: 100px; height: 100px;}
+.skillBox{  width: 35%; margin-left: 5%; background-color: #f1f1f1; border-radius: 20px; padding: 30px;  height: fit-content}
+.SkillContainer{ margin: 0 auto;  }
+/*.skillBox h4{display: inline; text-align: center; border: 2px red solid;}*/
+#skillLogo{width: 90%; margin: 5%;}
+.circleDiv{border: 5px #4a46ab solid; border-radius: 100%; width: 80px; margin: 5px 5px; height: 80px; display: inline-block;}
 
 /* project templates  */
 #tempHold{ border-top: 2px  #27246c solid; border-right: 2px  #27246c solid; margin: 20px 0;}
@@ -110,21 +119,18 @@ em{color: white;}
  #date{float: right; color: white; font-size: 18px}
 
 
-
-
 /* this is the gallery */
 .gallery{background-color: #000415; padding: 20px 0; }
 .gallery h2, .employers h2{color: #a6e1fa; font-size: 40px; text-align: center; padding: 50px 0; } /* this is both for employers and gallery  */
-.eachImg{margin: 0; width: 250px;  }
-.eachImg:hover{ margin: 10px auto; width: 400px; transition: 4s }
-.eachImg:visited{ margin: 0px auto; width: 250px; transition: 4s }
+.eachImg{ width: 24%; }
+.eachImg:hover{ margin: 10px auto; width: 26%; transition: 2s }
 
 
 /* this is emplyers */
 .employers{background-color: #f1f1f1;  }
 .employers h2{color: #000415;}
 .emploHolder{ width: fit-content; margin: 0 auto; padding: 0px 0 50px;}
-#company{margin: 0 10px; width: 200px}
+#company{margin: 0 auto; width: 25%}
 
 /* this is the footer */
 footer{background-color: #000415; padding-top: 30px;   }
@@ -143,6 +149,75 @@ footer #Logo{width: 150px;}
 
 
 
+
+
+
+
+
+
+
+
+/*Responsiveness 
+==========================================
+==============================================================
+===================================================================================================*/
+
+
+
+
+
+
+
+
+
+
+/*for Tablet*/
+@media all and (max-width: 1024px){
+
+.container{ width: 90%; margin: 0 auto; }
+
+
+header{min-height: 15vh}
+h1{font-size: 40px; margin:0}
+h2{font-size: 20px; margin:0}
+
+/*navigation*/
+#Logo{width:200px}
+.nav img{width:40px}
+
+/*intro section*/
+.intro{ height: 300px; }
+
+#intropic {width: 350px; }
+#introspan{ border: 30px #27246c solid; }
+
+/*Mycareer Section*/
+
+/*templates*/
+.templato{ width: 80%; padding: 20px 10px ;}
+.templato img{width: 270%; border: 10px #a6e1fa solid;}
+ .templatedescr{ width: 55%; padding: 0 15px; margin-top: -70px }
+ .templatedescr h1{ margin: 0; width: fit-content; font-size: 30px; padding: 15px 10px;  } 
+ .templatedescr h3{ font-size: 12px;  } 
+
+ .templatedescr p, .templatedescr h3,  .templatedescr em, .templatedescr h4, #skillsUsed{ margin: 0}
+ #skillImg{}
+
+ /*.templatedescr a{ border:3px red solid; display: inline-block; margin: 0 }*/
+
+#date{float: right; font-size: 10px; display: inline};
+
+}
+
+
+/*SmartPhones*/
+
+@media all and (max-width: 670px)
+{
+
+.container{width: 90%; margin: 0 auto;}
+
+}
 
 
 

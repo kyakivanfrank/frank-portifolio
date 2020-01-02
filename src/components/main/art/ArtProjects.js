@@ -1,23 +1,17 @@
 import React from 'react';
 
 import ArtProjectTemplate from  './ArtProjectTemplate';
-import gitLo from "../../../img/githubLogo.png";
-// import projectImage from '../../../img/projectFiles/ArtProjectsImages/2014-01-25 18.00.49.jpg';
-// import projectImage from '../../../img/projectFiles/ArtProjectsImages/2014-01-01 19.11.07.jpg';
-// import projectImage from '../../../img/projectFiles/ArtProjectsImages/portraitFrank.jpg';
-// import projectImage from '../../../img/projectFiles/ArtProjectsImages/IMG_20171015_214411.JPG';
-// import projectImage from '../../../img/projectFiles/ArtProjectsImages/batik art.jpg';
-// import projectImage from '../../../img/projectFiles/ArtProjectsImages/2014-05-03 13.58.46.jpg';
-import projectImage from '../../../img/galleryImages/myartFrank.JPEG';
+import FirebaseLogo from "../../../img/projectFiles/toolsIcons/firebase.png";
 
 import {Link} from 'react-router-dom';
 
 import Dataset from "../../Dataset";
 
+const ArtSkills =["one", "two", 'threee', "one", "two", 'threee',"one", "two", 'threee', "one", "two", 'threee' ];
+
 
 
 export default  ArtProjects => <div className="container">
-
 
 <h1>As an Artist,</h1>
 <div className="dev-descr-box">
@@ -29,9 +23,12 @@ Unexpectedly, This even gave me an artistic perception of Music and Dance (Hobbi
 <Link id="optLink" to="/Webdevt"> Feel free to check out my Coding skills too!</Link>
 
 </h3>
-<div className="skillBox">{
-    //  Artskills.map(eachskill => <div><h4>{eachskill}</h4></div>)
-    }</div>
+
+
+<div className="skillBox">
+<div className="SkillContainer">
+{ArtSkills.map(eachskill =>  <div className="circleDiv"> <img id="skillLogo" src={FirebaseLogo} alt="skillLogo"/> </div>)}</div>
+</div>
 </div>
 
 <div className="proWorks">

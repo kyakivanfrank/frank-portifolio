@@ -50,7 +50,7 @@ const Dataset = {
         projectcontributors: ["Solo"],
         projectSkillsUsed: [html , csS],
         projectDate: "03/03/2019",
-        link2project:"kyakivanfrank.github.io"
+        link2project:"https://kyakivanfrank.github.io"
     }
 
     ],
