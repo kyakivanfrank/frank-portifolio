@@ -214,8 +214,18 @@ h2{font-size: 20px; margin:0}
 
 @media all and (max-width: 670px)
 {
-
 .container{width: 90%; margin: 0 auto;}
+
+
+header{min-height: 15vh}
+h1{font-size: 25px; margin:0}
+h2{font-size: 12px; margin:0}
+
+
+/*footer */
+.sMedia{width: 20px; margin:0px 5px; height: 20px; display: inline-block; background-repeat: none; background-size: 100px; }
+
+
 
 }
 
